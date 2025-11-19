@@ -1,9 +1,0 @@
-<mvc:View
-    xmlns =" sap.m"
-    xmlns:mvc = "sap.ui.core.mvc">
-    <Page id="page" title="My App">
-        <content>
-            <Text id="txt" text="Welcome to my application!" />
-        </content>
-    </Page>
-</mvc:View>
