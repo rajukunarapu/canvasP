@@ -6,20 +6,17 @@ const MainWrapper = () => {
   return (
     <Box
       sx={{
-        flex: 1,
+        width:'60%',
         background: "#f4f5f7",
-        display: "flex",
-        justifyContent: "center",
-        padding: "20px",
+        marginTop: "30px",
       }}
     >
       {/* WHITE CANVAS */}
       <Box
         sx={{
-          width: "60%",
-          height: "85vh",
+          width: "100%",
+          height: "80vh",
           background: "#fff",
-          position: "relative",
           border: "1px solid #e0e0e0",
         }}
       >

@@ -4,6 +4,7 @@ import {
   List,
   ListItem,
   ListItemButton,
+  Stack,
 } from "@mui/material";
 
 import {
@@ -17,6 +18,15 @@ import {
   PuzzlePieceIcon,
   SparklesIcon,
 } from "@heroicons/react/24/outline";
+import DesignSection from "../Components/DesignSection";
+import ElementsSection from "../Components/ElementsSection";
+import TextSection from "../Components/TextSection";
+import BrandSection from "../Components/BrandSection";
+import UploadsSection from "../Components/UploadsSection";
+import ToolsSection from "../Components/ToolsSection";
+import ProjectsSection from "../Components/ProjectSection";
+import AppsSection from "../Components/AppsSection";
+import MagicMediaSection from "../Components/MagicMediaSection";
 
 const SideBarWrapper = () => {
   const [activeSection, setActiveSection] = useState("Design");
@@ -35,28 +45,25 @@ const SideBarWrapper = () => {
 
   // RIGHT PANEL CONTENT (you will replace this later)
   const RightPanelContent = {
-    Design: <Box>Design Options Here…</Box>,
-    Elements: <Box>Elements go here…</Box>,
-    Text: <Box>Text settings here…</Box>,
-    Brand: <Box>Brand section here…</Box>,
-    Uploads: <Box>Your uploads appear here…</Box>,
-    Tools: <Box>Tools list here…</Box>,
-    Projects: <Box>Project list here…</Box>,
-    Apps: <Box>Apps available here…</Box>,
-    "Magic Media": <Box>Magic Media content…</Box>,
+    Design: <DesignSection/>,
+    Elements: <ElementsSection/>,
+    Text: <TextSection/>,
+    Brand: <BrandSection/>,
+    Uploads: <UploadsSection/>,
+    Tools: <ToolsSection/>,
+    Projects: <ProjectsSection/>,
+    Apps: <AppsSection/>,
+    "Magic Media": <MagicMediaSection/>,
   };
 
   return (
-    <Box sx={{ display: "flex", height: "100vh" }}>
-
+    <Stack direction="row" >
       {/* LEFT SIDEBAR */}
       <Box
         sx={{
           width: "90px",
           backgroundColor: "#fff",
-          borderRight: "1px solid #eee",
-          paddingTop: "20px",
-          textAlign: "center",
+          borderRight: "1px solid #eee"
         }}
       >
         <List>
@@ -101,7 +108,7 @@ const SideBarWrapper = () => {
       {/* RIGHT PANEL — SAME SIZE ALWAYS */}
       <Box
         sx={{
-          width: "250px",             // ⬅ SAME SIZE ALWAYS
+          width: "220px",             // ⬅ SAME SIZE ALWAYS
           backgroundColor: "#fff",
           borderRight: "1px solid #eee",
           padding: "16px",
@@ -109,7 +116,7 @@ const SideBarWrapper = () => {
       >
         {RightPanelContent[activeSection]}
       </Box>
-    </Box>
+    </Stack>
   );
 };
 

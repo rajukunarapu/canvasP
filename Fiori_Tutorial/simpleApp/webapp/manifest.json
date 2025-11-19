@@ -1,0 +1,37 @@
+{
+    "sap.app": {
+        "id": "demo.app",
+        "type": "application",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "title": "Demo App",
+        "description": "My SAPUI5 Walkthrough App"
+    },
+
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {},
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+
+    "sap.ui5": {
+        "rootView": {
+            "viewName": "demo.app.view.App",
+            "type": "XML",
+            "async": true
+        },
+        "dependencies": {
+            "minUI5Version": "1.120.0",
+            "libs": {
+                "sap.m": {},
+                "sap.ui.core": {},
+                "sap.ui.layout": {}
+            }
+        }
+    }
+}

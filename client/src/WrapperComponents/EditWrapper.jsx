@@ -23,14 +23,16 @@ const EditWrapper = () => {
   return (
     <Box
       sx={{
-        width: "100%",
-        height: "48px",
+        width: "90%",
+        height: "40px",
         background: "#fff",
-        borderBottom: "1px solid #e5e7eb",
+        border: "2px solid #000207ff",
+        borderRadius:"10px",
+        boxShadow:"none",        
         display: "flex",
         alignItems: "center",
-        px: 1.5,
-        gap: 1.5,
+        px: 1,
+        gap: 1,
         overflowX: "auto",
         whiteSpace: "nowrap",
         "&::-webkit-scrollbar": { display: "none" },
